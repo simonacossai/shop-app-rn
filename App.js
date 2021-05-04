@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {createStore, combineReducers } from 'redux';
 import {Provider} from 'react-redux';
 import productsReducer from './store/reducers/products';
+import cartReducer from './store/reducers/cart';
+import orderReducer from './store/reducers/order';
 import ShopNavigator from './navigation/ShopNavigator';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
@@ -14,7 +16,9 @@ const fetchFonts=()=>{
 }
 
 const rootReducer = combineReducers({
-  products: productsReducer
+  products: productsReducer,
+  cart: cartReducer,
+  orders: orderReducer
 });
 const store = createStore(rootReducer, composeWithDevTools());
 export default function App() {
