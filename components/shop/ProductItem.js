@@ -3,7 +3,6 @@ import {StyleSheet, View, Text, Image, Button, TouchableOpacity} from 'react-nat
 import Colors from '../../constants/Colors';
 
 const ProductItem=props=>{
-
     return(
         <View >
             <TouchableOpacity onPress={props.onSelect} useForeground style={styles.product}>
@@ -17,7 +16,7 @@ const ProductItem=props=>{
             <View style={styles.action}>
              {props.children}
             </View>
-    </TouchableOpacity>
+            </TouchableOpacity>
         </View>
     )
 }
