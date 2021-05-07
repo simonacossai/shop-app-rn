@@ -4,7 +4,7 @@ import ReduxThunk from 'redux-thunk';
 import {Provider} from 'react-redux';
 import productsReducer from './store/reducers/products';
 import cartReducer from './store/reducers/cart';
-import orderReducer from './store/reducers/order';
+import orderReducer from './store/reducers/orders';
 import ShopNavigator from './navigation/ShopNavigator';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
