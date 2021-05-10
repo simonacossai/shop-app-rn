@@ -5,6 +5,7 @@ import {Provider} from 'react-redux';
 import productsReducer from './store/reducers/products';
 import cartReducer from './store/reducers/cart';
 import orderReducer from './store/reducers/orders';
+import authReducer from './store/reducers/auth';
 import ShopNavigator from './navigation/ShopNavigator';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
@@ -19,7 +20,8 @@ const fetchFonts=()=>{
 const rootReducer = combineReducers({
   products: productsReducer,
   cart: cartReducer,
-  orders: orderReducer
+  orders: orderReducer,
+  auth: authReducer
 });
 const store = createStore(rootReducer, applyMiddleware(ReduxThunk));
 export default function App() {
