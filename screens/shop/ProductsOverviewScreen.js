@@ -149,7 +149,7 @@ ProductsOverviewScreen.navigationOptions = navData => {
         />
       </HeaderButtons>
     )
-  };
+  }
 };
 
 const styles = StyleSheet.create({
